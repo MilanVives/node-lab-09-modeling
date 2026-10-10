@@ -1,0 +1,16 @@
+{
+  "name": "node-lab-09-modeling",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test --test-force-exit \"test/**/*.test.js\"",
+    "submit": "node scripts/submit.cjs"
+  },
+  "dependencies": {
+    "mongoose": "^9.11.1"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.3.0"
+  }
+}
