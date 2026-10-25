@@ -9,7 +9,7 @@ npm install
 npm test
 ```
 
-`npm test` runs the same checks as the autograder, against a temporary in-memory MongoDB. Run a single requirement with `npm test -- --test-name-pattern="^R1:"`. `npm start` runs a small demo against your own database (local MongoDB or `MONGODB_URI`).
+`npm test` runs the same checks as the autograder, against a temporary in-memory MongoDB. Run a single requirement with `node --test --test-name-pattern="^R1:" "test/**/*.test.js"`. `npm start` runs a small demo against your own database (local MongoDB or `MONGODB_URI`).
 
 All code goes in `src/movies.js`. The schemas are given: reviews are **embedded** in a movie (`reviews: [reviewSchema]`). Do not change the schemas.
 
